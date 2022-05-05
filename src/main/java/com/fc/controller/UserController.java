@@ -1,5 +1,6 @@
 package com.fc.controller;
 
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -18,6 +19,14 @@ public class UserController {
     @PostMapping
     public Map<String,Object> login(String username,
                                     String password){
+        HashMap<String, Object> map = new HashMap<>();
+
+        return map;
+
+    }
+
+    @GetMapping("logout")
+    public Map<String,Object> logout(){
         HashMap<String, Object> map = new HashMap<>();
 
         return map;
