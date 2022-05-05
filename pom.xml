@@ -16,6 +16,13 @@
     <properties>
         <java.version>1.8</java.version>
     </properties>
+
+    <developers>
+        <developer>
+            <name>李围围</name>
+            <email>987654321@qq.com</email>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
