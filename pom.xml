@@ -18,6 +18,15 @@
         <java.version>1.8</java.version>
         <mysql.version>5.1.49</mysql.version>
     </properties>
+
+    <developers>
+        <developer>
+            <name>李围围</name>
+            <roles>
+                <role>学生</role>
+            </roles>
+        </developer>
+    </developers>
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
