@@ -22,7 +22,9 @@
     <developers>
         <developer>
             <name>李围围</name>
-            <email>987654321@qq.com</email>
+            <roles>
+                <role>学生</role>
+            </roles>
         </developer>
     </developers>
     <dependencies>
