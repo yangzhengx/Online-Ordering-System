@@ -1,21 +1,10 @@
 package com.fc.entity;
 
+import lombok.Data;
+
+@Data
 public class ShoppingCart {
-
-    private boolean price;
-    private int sums;
-    private boolean name;
-
-    public boolean getPrice() {
-        return price;
-    }
-
-    public int getSums() {
-        return sums;
-    }
-
-    public boolean getName() {
-
-        return name;
-    }
+    private Float price;
+    private Integer sums;
+    private String name;
 }

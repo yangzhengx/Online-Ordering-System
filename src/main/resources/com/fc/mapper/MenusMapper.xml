@@ -1,6 +1,22 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 <mapper namespace="com.fc.dao.MenusMapper">
+
+<!--  查询指定行数据-->
+  <select id="queryAllByLimit" resultType="com.fc.dao.MenusMapper">
+    select id,
+           name,
+           typeid,
+           burden,
+           brief,
+           price,
+           sums,
+           price1,
+           sums1,
+           imgpath
+    from menus limit #{offset}, #{limit}
+  </select>
+
   <resultMap id="BaseResultMap" type="com.fc.entity.Menus">
     <id column="id" jdbcType="INTEGER" property="id" />
     <result column="name" jdbcType="VARCHAR" property="name" />

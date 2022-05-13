@@ -1,9 +1,4 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%@page import="com.fc.entity.Menus"%>
-<%@page import="com.fc.dao.MenusDao"%>
-<%@page import="java.util.*"%>
-<%@ page import="com.fc.MenusService" %>
-<%@ page import="com.fc.service.impl.MenusServiceImpl" %>
 <%@ page language="java"  pageEncoding="utf-8"%>
 <html>
 <head>

@@ -4,7 +4,9 @@ import com.fc.entity.Menus;
 import com.fc.entity.MenusExample;
 import java.util.List;
 import org.apache.ibatis.annotations.Param;
+import org.springframework.stereotype.Repository;
 
+@Repository("menusMapper")
 public interface MenusMapper {
     long countByExample(MenusExample example);
 
@@ -27,4 +29,6 @@ public interface MenusMapper {
     int updateByPrimaryKeySelective(Menus record);
 
     int updateByPrimaryKey(Menus record);
+
+    List<Menus> queryAllByLimit(@Param("offset") int offset, @Param("limit") int limit);
 }

@@ -4,7 +4,7 @@ spring:
     driver-class-name: com.mysql.jdbc.Driver
     url: jdbc:mysql://localhost:3306/apsfc?useSSL=false&useUnicode=true&characterEncoding=utf8&serverTimeZone=GTM+8
     username: root
-    password: 654321
+    password: 123456789
   servlet:
     multipart:
       max-request-size: 50MB
@@ -36,8 +36,4 @@ mybatis:
 pagehelper:
   reasonable: true
   auto-dialect: true
-server:
-  undertow:
-    accesslog:
-      prefix: classpath:/public/qiantai/
-      suffix:
+

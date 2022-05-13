@@ -30,5 +30,7 @@ public interface UsersMapper {
 
     int updateByPrimaryKey(Users record);
 
+    Users queryById(Integer id);
+
     //Users selectById(String name, String pwd);
 }

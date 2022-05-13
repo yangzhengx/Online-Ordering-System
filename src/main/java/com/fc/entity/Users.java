@@ -1,5 +1,10 @@
 package com.fc.entity;
 
+import lombok.Data;
+import lombok.NoArgsConstructor;
+
+@Data
+@NoArgsConstructor
 public class Users {
     private Integer id;
 
@@ -24,6 +29,35 @@ public class Users {
     private String code;
 
     private Integer type;
+
+    public Users(String name, String pwd, String realname, String sex, Integer age, String card, String address, String phone, String email, String code, Integer type) {
+        this.name = name;
+        this.pwd = pwd;
+        this.realname = realname;
+        this.sex = sex;
+        this.age = age;
+        this.card = card;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.code = code;
+        this.type = type;
+    }
+
+    public Users(Integer id, String name, String pwd, String realname, String sex, Integer age, String card, String address, String phone, String email, String code, Integer type) {
+        this.id = id;
+        this.name = name;
+        this.pwd = pwd;
+        this.realname = realname;
+        this.sex = sex;
+        this.age = age;
+        this.card = card;
+        this.address = address;
+        this.phone = phone;
+        this.email = email;
+        this.code = code;
+        this.type = type;
+    }
 
     public Integer getId() {
         return id;
