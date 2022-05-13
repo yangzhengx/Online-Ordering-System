@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.fc.dao.ShoppingCartDao">
+    <select id="findByUserId" resultType="com.fc.entity.ShoppingCart">
+        select menus.sums, menus.name, menus.price
+        from menus
+        inner join orders
+        on orders.menuid = menus.id
+        where orders.userid = ${id} and orders.delivery = 0
+    </select>
+</mapper>
